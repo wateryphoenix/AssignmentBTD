@@ -5,11 +5,11 @@ def leftClickButton(event):
     BMI = (float(textBoxWeight.get())/math.pow(float(textBoxHeight.get())/100,2))
     if BMI <= 18.50:
         labelResult.configure(text = "น้ำหนักน้อย / ผอม")
-    elif BMI >= 18.50 and BMI <= 22.90:
+    elif BMI >= 18.60 and BMI <= 22.90:
         labelResult.configure(text ="ปกติ - สุขภาพดี")
-    elif BMI >= 22.90 and BMI <= 24.90:
+    elif BMI >= 23.00 and BMI <= 24.90:
         labelResult.configure(text ="ท้วม / โรคอ้วนระดับ 1")
-    elif BMI >= 24.90 and BMI <= 29.90:
+    elif BMI >= 25.00 and BMI <= 29.90:
         labelResult.configure(text="อ้วน / โรคอ้วนระดับ 2")
     else :
         labelResult.configure(text ="อ้วนมาก / โรคอ้วนระดับ 3")
